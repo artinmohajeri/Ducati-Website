@@ -1,0 +1,324 @@
+body{
+    margin: 0;
+    font-family: Impact, Haettenschweiler, sans-serif;
+    /* position: relative; */
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.navbar{
+    z-index: 1;
+    background-color: white;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    box-shadow: 3px 3px 6px #ddd;
+    display: flex;
+    /* background-color: aqua; */
+}
+.navigation-item{
+    /* background-color: aliceblue; */
+    display: inline-block;
+    justify-content: start;
+    width: 100px;
+    height: 100px;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+.navigation-item:hover{
+    border-bottom: 4px solid #e41f2d ;
+    transition: 0.2s;
+}
+.navigation-item .navigation-link:active{
+    color: #e41f2d;
+}
+.navigation-item{
+    line-height: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    margin-left:20px;
+}
+.navigation-item a{
+    text-decoration: none;
+    font-size: 22px;
+
+}
+.right-items{
+    position: absolute;
+    right: 0;
+}
+
+.bg{
+    filter: blur(2px);
+    width: 100%;
+    height: 550px;
+    margin: 40px auto;
+    background-image:url(../img/ducati-panigale-v4.webp);
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+}
+.middle-bg{
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/Ducati-Streetfighter-V4.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bg-text{
+    border: 3px solid #fff;
+    width: 500px;
+    height: 200px;
+    background-color:rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: calc(50% - 250px);
+    top: 300px;
+    line-height:200px;
+    font-size:30px ;
+    color: #fff;
+    text-align: center;
+}
+.section-box{
+    border: 1px solid rgb(197, 197, 197);
+    width: 1330px;
+    height: 300px;
+    margin: 50px auto;
+    border-left: 5px solid #e41f2d;
+}
+.section-box:hover{
+    box-shadow: 0 0 17px 0 rgb(0 0 0 / 30%);
+    transition: 0.3s;
+}
+.right-section{
+    background-position:center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+    width: 663px;
+    height: 300px;
+
+}
+.section-1 .right-section{
+    background-image: url(../img/two-ducati.jpg);
+    background-color: #121212;
+}
+.section-2 .right-section{
+    background-image: url(../img/be-inspired.png);
+}
+.section-3 .right-section{
+    background-image: url(../img/full1_desk_3.webp);
+}
+.left-section{
+    /* background-color: rgb(203, 203, 203); */
+    float: left;
+    width: 663px;
+    height: 300px;
+}
+.left-section span{
+    color: #666666;
+    font-family: 'Courier New', Courier, monospace;
+}
+.left-section h2{
+    color: #0f0f0f;
+    font-family: 'Courier New', Courier, monospace;
+}
+.left-section p{
+    color: #0f0f0f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.txt{
+    height: 280px;
+    width: 600px;
+    /* background-color: rgb(246, 137, 137); */
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.model-range-txt{
+    text-align: center;
+    font-size:35px ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin-top: 100px;
+}
+a.model-range-link {
+    width: 30%;
+    flex: 0 0 33%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.model-range-container{
+    margin-top: 60px;
+    width: 100%;
+    /* background-color: rgb(189, 222, 251); */
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.model-range-item{
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+    position: relative;
+}
+.model-range-item img{
+    width: calc(630px/1.5);
+    height: calc(390px/1.5);
+}
+.model-range-name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+}
+.model-range-item img:hover{
+    animation: shake 0.8s;
+    animation-iteration-count: 1s;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.box-container{
+    margin-top: 60px;
+    width: 100%;
+    height: 460px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.inner-box{
+    /* background-color: #e41f2d; */
+    width: 417px;
+    min-height: 460px;
+    border: 1px solid rgb(210, 210, 210);
+}
+.inner-box:hover{
+    box-shadow: 0 0 17px 0 rgb(0 0 0 / 30%);
+    transition: 0.3s;
+}
+.inner-box .img1{
+    /* background-color: rgb(52, 230, 173); */
+    height: 230px;
+    background-image: url(../img/dealers.png);
+    background-position: center;
+}
+.inner-box-txt{
+    margin-left: 30px;
+    height: 230px;
+}
+.inner-box-txt h3{
+    font-family: 'Courier New', Courier, monospace;
+    color: #666666;
+    font-size: 20px;
+}
+.inner-box-txt span{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+.inner-box .img2{
+    background-image: url(../img/events.png);
+    height: 230px;
+    background-position: center;
+}
+.inner-box .img3{
+    background-image: url(../img/prices.jpg);
+    height: 230px;
+    background-position: center;
+}
+.footer{
+    margin-top: 80px;
+    width: 100%;
+    height: 520px;
+    background-color: #0f0f0f;
+    position: relative;
+}
+.footer-logo{
+    position: absolute;
+    left: calc(50% - 299px);
+    top: 10%;
+    width: 598px;
+    height: 46px;
+    background-image: url(../img/footer.svg);
+}
+.footer-image{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    bottom: 0;
+}
+.footer-image img{
+    filter: blur(0.5px);
+    position: absolute;
+    bottom: -50px;
+    width: 300px;
+    height: 300px;
+    rotate: -20deg;
+}
+.footer-links{
+    list-style: none;
+    position: absolute;
+    left: calc(50% - 325px);
+    top: 25%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-link{
+    padding: 0px 30px;
+    display: inline-block;
+}
+.footer-links .footer-link a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+.copyright{
+    position: absolute;
+    left: calc(50% - 500px);
+    top: 45%;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 1000px;
+    color: #666;
+}
+.social-links{
+    position: absolute;
+    left: calc(50% - 192px);
+    top: 70%;
+    list-style: none;
+    display: inline-block;
+}
+.social-link{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.social-link a{
+    color: #666;
+    font-size: 30px;
+}
+
